@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+/* NAV-BAR */
+
+nav{
+  background-color: rgb(248, 112, 96);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.container{
+  margin-left: 2rem;
+}
+
+.brand{
+  display: inline-block;
+  font-size: x-large;
+  margin: 0 0.5rem ;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Create Note Button*/
+
+.btn {
+  background-color: rgb(16, 37, 66);
+  color: rgb(255, 255, 255);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: width 0.3s ease;
+} 
+
+.divbtn{
+  width: 100vw;
+  justify-content: center ;
+  margin-top: 2rem;
+}
+
+
+.btn:hover{
+  color: rgb(255, 255, 255);
+  width: 300px;
+}
+
+/* form */
+.noteform{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+  width: 50vw;
+  margin: 2rem auto 2rem auto;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: rgb(205, 215, 214);
+  box-shadow: 0 1px 5px rgb(224, 218, 218);
+  border : 1px solid rgba(220, 226, 225, 0.877);
+}
+
+.noteform button {
+  position: absolute;
+  top: 87%;
+  right: 7%;
+  background: none;
+  border: none;
+}
+
+
+form input,textarea{
+  border: none;
+  outline: none;
+  background-color: rgb(205, 215, 214);
+  resize: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+textarea::placeholder,input::placeholder{
+  color: rgb(137, 145, 144);
+}
+
+textarea::text,input::text{
+  color: rgb(137, 145, 144);
+}
+
+
+/* notes */
+
+.note{
+  padding: 2rem;
+  border-radius: 1rem;
+  flex-basis: 30%;
+  position: relative;
+  /* width: max-content; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.noteBox{
+  display: flex;
+  margin: 2.5rem;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#deletButton{
+  border: none;
+  background: none;
+  opacity: 80%;
+}
+
+#deletButton > *{
+  font-size:1.6rem;
+  color:rgb(16, 37, 66);
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+#deletButton > *:hover{
+  color: red;
+}
+
+.note h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+}
+
+.note p{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  color: #444444;
+}
+
+
+@media (max-width: 750px) {
+  .noteBox{
+    flex-direction: column;
+  }
+
+  .note{
+    flex-basis: none;
+  }
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
